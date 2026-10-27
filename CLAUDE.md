@@ -11,7 +11,7 @@ Regression tests: `regressions/EasyPoisons` in VanillaForge (34 tests).
 
 | File | Job |
 | --- | --- |
-| `ClassicAPIRequirement.lua` | ClassicAPI 1.17.7+ guard; sets `ns.unsupported` so the addon stays inert |
+| `ClassicAPIRequirement.lua` | ClassicAPI 1.17.11+ guard; sets `ns.unsupported` so the addon stays inert |
 | `ForgeUI.lua` | The shared settings kit (ForgeUI, Ember) |
 | `EasyPoisons.lua` | Poison table, vendor scan, order plan, buying, recipe learning, window, `/ep` |
 

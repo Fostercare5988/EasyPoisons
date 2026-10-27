@@ -1,10 +1,10 @@
 -- Enforce VanillaForge's shared ClassicAPI support floor. EasyPoisons.lua
 -- checks ns.unsupported and stays inert when this guard fails.
 local addonName, ns = ...
-local minimum = 11707
+local minimum = 11711
 if type(CLASSIC_API_VERSION) ~= "number" or CLASSIC_API_VERSION < minimum then
     ns.unsupported = true
-    local message = addonName .. " requires ClassicAPI 1.17.7 or later. Update ClassicAPI.dll and restart the client."
+    local message = addonName .. " requires ClassicAPI 1.17.11 or later. Update ClassicAPI.dll and restart the client."
     if DEFAULT_CHAT_FRAME and type(DEFAULT_CHAT_FRAME.AddMessage) == "function" then
         DEFAULT_CHAT_FRAME:AddMessage("|cffff2020[" .. addonName .. " Fatal Error]|r " .. message, 1, 0.2, 0.2)
     end
