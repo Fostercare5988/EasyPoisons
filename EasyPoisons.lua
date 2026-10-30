@@ -604,3 +604,22 @@ SlashCmdList["EASYPOISONS"] = function()
         ShowWindow(atVendor)
     end
 end
+
+-- Game Menu > AddOn Options > EasyPoisons (ClassicAPI).
+local entry = CreateFrame("Frame", "EasyPoisonsOptionsEntry")
+entry.name = "EasyPoisons"
+local entryTitle = entry:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+entryTitle:SetPoint("TOPLEFT", entry, "TOPLEFT", 16, -16)
+entryTitle:SetText("EasyPoisons")
+local entryText = entry:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+entryText:SetPoint("TOPLEFT", entryTitle, "BOTTOMLEFT", 0, -8)
+entryText:SetWidth(380)
+entryText:SetJustifyH("LEFT")
+entryText:SetText("Plans a batch of rogue poisons and buys the missing reagents. Type /ep to open it at any time.")
+local entryOpen = UI.Button("EasyPoisonsOptionsEntryOpen", entry, "Open EasyPoisons", 16, -80, 172, function()
+    if InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown() then InterfaceOptionsFrame:Hide() end
+    if GameMenuFrame and GameMenuFrame:IsShown() then HideUIPanel(GameMenuFrame) end
+    if EasyPoisons.isRogue and not (frame and frame:IsShown()) then ShowWindow(atVendor) end
+end)
+UI.Select(entryOpen, true)
+InterfaceOptions_AddCategory(entry)
