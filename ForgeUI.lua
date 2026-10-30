@@ -1,4 +1,4 @@
--- ForgeUI: the AutoLazy options layout as a reusable kit, WoW 1.12.1 / ClassicAPI 1.16.0+.
+-- ForgeUI: the AutoLazy options layout as a reusable kit, WoW 1.12.1 / ClassicAPI.
 -- Copy this file and the Media folder into an addon, list ForgeUI.lua in the TOC
 -- before the GUI files, then use ns.UI. See templates/ForgeUI/README.md.
 -- Rounded shapes are nine-slices of one white disc, tinted per use, so any

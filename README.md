@@ -8,7 +8,7 @@ server changes its poisons, vendors or client.
 
 ## Requirements
 
-- [ClassicAPI](https://github.com/brues-code/ClassicAPI) 1.17.11 or newer. Without
+- [ClassicAPI](https://github.com/brues-code/ClassicAPI). Without
   it the addon stays switched off and says so.
 - A rogue. The addon does nothing on other classes.
 
