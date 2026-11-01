@@ -97,21 +97,6 @@ local function ItemName(id)
     return C_Item.GetItemNameByID(id) or ("item " .. id)
 end
 
-function EasyPoisons:FormatMoney(copper)
-    local gold = math.floor(copper / 10000)
-    local silver = math.floor((copper % 10000) / 100)
-    copper = copper % 100
-
-    local text = ""
-    if gold > 0 then
-        text = text .. "|cFFFFD700" .. gold .. "g|r "
-    end
-    if silver > 0 or gold > 0 then
-        text = text .. "|cFFC0C0C0" .. silver .. "s|r "
-    end
-    return text .. "|cFFB87333" .. copper .. "c|r"
-end
-
 -- Vendor -----------------------------------------------------------------
 
 -- Reads the open vendor's reagents by item ID. Returns true for a poison
@@ -250,7 +235,7 @@ local function Refresh()
     end
     local cost, slots, problem = Plan()
     local blocker = Blocker(cost, slots, problem)
-    SetText(frame.cost, atVendor and ("Total cost: " .. EasyPoisons:FormatMoney(cost)) or "")
+    SetText(frame.cost, atVendor and ("Total cost: " .. GetCoinTextureString(cost)) or "")
     SetText(frame.status, blocker or "")
     SetBuyEnabled(not blocker)
 end
