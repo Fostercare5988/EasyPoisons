@@ -1,7 +1,6 @@
 ## X-Website: https://github.com/Fostercare5988/EasyPoisons
 ## X-Maintainer: Fostercare5988
 ## Interface: 11200
-## Dependencies: !!!ClassicAPI
 ## Title: |cff00ff00Easy Poisons|r
 ## Notes: Plan a batch of rogue poisons and buy the missing reagents in one click. Opens at poison reagent vendors. Based on Horyoshi's EasyPoisons. Requires ClassicAPI.
 ## Author: Fostercare5988
