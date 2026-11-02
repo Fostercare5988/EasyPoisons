@@ -34,7 +34,7 @@ local function SplitRank(name)
     local _, _, base, numeral = string.find(name, "^(.-) ([IVX]+)$")
     if not base then return name, 1 end
     local rank, largest = 0, 0
-    for n = string.len(numeral), 1, -1 do
+    for n = #numeral, 1, -1 do
         local value = ROMAN[string.sub(numeral, n, n)]
         if value < largest then rank = rank - value else rank = rank + value; largest = value end
     end
