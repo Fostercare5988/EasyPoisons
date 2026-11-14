@@ -6,7 +6,8 @@ click. For World of Warcraft 1.12.1. Requires
 
 ## Install
 
-Put the `EasyPoisons` folder in `Interface\AddOns` and restart the game.
+Download `EasyPoisons.zip` from the [latest release](https://github.com/Fostercare5988/EasyPoisons/releases/latest), extract it into
+`Interface\AddOns` and restart the game.
 
 ## Use
 
