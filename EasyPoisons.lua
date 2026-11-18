@@ -1,6 +1,5 @@
 -- EasyPoisons: plan a batch of rogue poisons and buy the missing
--- reagents at the vendor in one click. By Fostercare5988, based on Horyoshi's
--- original EasyPoisons. WoW 1.12.1 with ClassicAPI
+-- reagents at the vendor in one click. By Fostercare5988. WoW 1.12.1 with ClassicAPI
 -- (ClassicAPIRequirement.lua).
 local addonName, ns = ...
 if ns.unsupported then return end

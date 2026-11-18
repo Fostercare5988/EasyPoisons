@@ -17,7 +17,3 @@ Download `EasyPoisons.zip` from the [latest release](https://github.com/Fosterca
 
 `/ep` opens or closes the window at any vendor. You can also switch on
 "Keep 20 Flash Powder" in the window.
-
-## Credits
-
-Based on EasyPoisons by Horyoshi. Maintained by Fostercare5988.
